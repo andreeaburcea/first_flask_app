@@ -26,9 +26,11 @@ def guess_number(guess):
     elif guess < number:
         return '<h1 color="orange">Too high, try again! </h1>' \
                '<img src="https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif" width=300px>'
-    else:
+    elif guess == number:
         return '<h1 color="green"> You found me</h1> ' \
                '<img src"https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif" width=300>'
+    else:
+        return '<h1 color="red">I said a number between 0 and 9!👓</h1>'
 
 
 if __name__ == '__main__':
